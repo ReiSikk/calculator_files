@@ -8,6 +8,7 @@ let lastResult = resultList.lastElementChild;
 let value = operator.value;
 const calcBtn = document.querySelector("#calculate");
 let newSelector;
+let callCount = 0;
 
 ////Read the operator
 readOperator();
@@ -55,6 +56,15 @@ function calcFunc() {
     lastResult.textContent = result;
     console.log(result);
   }
+  /*   callCount += 1;
+  console.log(callCount);
+  moveResultUp(); */
 }
+/* function updateDisplay() {
+  let lastResult = resultList.firstElementChild;
+}
+function moveResultUp() {
+  lastResult.addEventListener("change", updateDisplay);
+} */
 
 //Clearing all the results
