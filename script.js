@@ -68,3 +68,11 @@ function moveResultUp() {
 } */
 
 //Clearing all the results
+document.querySelector("#clear").addEventListener("click", clearAll);
+function clearAll() {
+  lastResult.textContent = "0";
+  document.querySelector("#result1").textContent = "0";
+  document.querySelector("#result2").textContent = "0";
+  document.querySelector("#result3").textContent = "0";
+  console.log("clearAll");
+}
